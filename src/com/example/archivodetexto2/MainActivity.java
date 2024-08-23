@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
 		edit1=(EditText)findViewById(R.id.editText0);
 		edit2=(EditText)findViewById(R.id.editText1);
 		
-		Toast.makeText(this, "Bienvenida mi cochinita", Toast.LENGTH_LONG).show();
+		Toast.makeText(this, "Bienvenido al Bloc de Notas ", Toast.LENGTH_LONG).show();
 		
 	}
 
@@ -71,7 +71,7 @@ public class MainActivity extends Activity {
 			
 			
 		} catch (IOException err) {
-			Toast.makeText(this, "ocuurio algun problema", Toast.LENGTH_LONG).show();
+			Toast.makeText(this, "ocurrio algun problema", Toast.LENGTH_LONG).show();
 
 			
 		}
@@ -88,12 +88,12 @@ public class MainActivity extends Activity {
 	{
 		if(deleteFile(edit1.getText().toString()))
 				{
-			Toast.makeText(this, "Se borro el archivo mamolchita", Toast.LENGTH_LONG).show();
+			Toast.makeText(this, "Se borro el archivo", Toast.LENGTH_LONG).show();
 			edit1.setText("");
 			edit2.setText("");
 				}else
 			{
-					Toast.makeText(this, "No existe el archivo mamolchita", Toast.LENGTH_LONG).show();
+					Toast.makeText(this, "No existe el archivo", Toast.LENGTH_LONG).show();
 			}
 	}
 }
